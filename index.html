@@ -12,18 +12,21 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/tpryan.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script type="text/javascript" src="//use.typekit.net/ujz8kky.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 		<script>
 			// If the query includes 'print-pdf' we'll use the PDF print sheet
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
+
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -39,9 +42,110 @@
 			
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+				<section class="title" data-state="blackout">
+					<h1>Adobe &amp; <br /><strong>Modern</strong> Web Development</h1>
+					<p>Terry Ryan |  Developer Evangelist | Twitter: <strong>@tpryan</strong>
+
+				</section>
+
+				<section class="question" data-state="blackout">
+					<h1>Who are <strong>you</strong>?</h1>
+				</section>
+
+				<section class="question" data-state="blackout">
+					<h1>In the <strong>past</strong> year.</h1>
+				</section>
+
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<img src="img/flash.png" />
+					<img src="img/html5.png" class="transparent" />
+				</section>
+
+				<section>
+					<figure>
+						<img src="img/cs6.png" />
+						<figcaption>Creative Suite 6</figcaption>
+					</figure>
+					<figure>
+						<img src="img/creative_cloud.png" />
+						<figcaption>Creative Cloud</figcaption>
+					</figure>
+					
+				</section>
+
+				<section>
+					<figure>
+						<img src="img/fireworks.png" />
+						<figcaption>Fireworks</figcaption>
+					</figure>
+					<figure>
+						<img src="img/dreamweaver.png" />
+						<figcaption>Dreamweaver</figcaption>
+					</figure>
+					
+				</section>
+
+				<section>
+					<figure>
+						<img src="img/phonegap.png" />
+						<figcaption>PhoneGap</figcaption>
+					</figure>
+					<figure>
+						<img src="img/typekit.png" />
+						<figcaption>Typekit</figcaption>
+					</figure>
+					
+				</section>
+
+				<section class="question" data-state="blackout">
+					<h1>The <strong>future</strong>...</h1>
+				</section>
+
+				<section>
+					<img src="img/flash.png" />
+					<img src="img/html5.png" class="transparent" />
+				</section>
+
+				<section>
+					<img src="img/edge_abstract.png"  class="transparent" />
+					<h2>Adobe Edge Animate</h2>
+				</section>
+
+				<section class="demo">
+					<img src="img/edge_screenshot.png" />
+					<h2>Demo</h2>
+					<h3>Adobe Edge Animate</h3>
+					
+				</section>
+
+				<section>
+						<img src="img/shaders.png" />
+						<img src="img/exclusions.png" />
+						<h2 style="text-align: center;">CSS Contributions</h2>
+						<img src="img/regions.png" />
+					
+				</section>
+
+				<section class="demo">
+					<img src="img/regions.png" />
+					<img src="img/exclusions.png" />
+					<br />
+					<h2>Demo</h2>
+					<h3>CSS Regions &amp; CSS Exclusions</h3>
+					
+				</section>
+
+				<section class="demo">
+					<img src="img/shaders.png" />
+					<br />
+					<h2>Demo</h2>
+					<h3>CSS Shaders</h3>
+					
+				</section>
+
+				<section>
+					<h1>Platforms</h1>
+					
 				</section>
 				
 				<section>
@@ -317,7 +421,7 @@ function linkify( selector ) {
 				progress: true,
 				history: true,
 				
-				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+				theme: Reveal.getQueryHash().theme || 'tpryan', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
 
 				// Optional libraries used to extend on reveal.js
